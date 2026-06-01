@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Complete Electronics Symbols</title>
+    <style>
+        body { font-family: sans-serif; background-color: #f4f4f4; padding: 20px; }
+        .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(140px, 1fr)); gap: 15px; }
+        .icon-card { background: white; border: 1px solid #ccc; padding: 10px; text-align: center; border-radius: 8px; }
+        svg { width: 60px; height: 60px; display: block; margin: 0 auto 5px; }
+        h2 { border-bottom: 2px solid #333; margin-top: 30px; }
+    </style>
+</head>
+<body>
+    <h1>Comprehensive Electronics Schematic Symbols</h1>
+    <div id="app"></div>
+
+    <script type="module">
+        import icons from './symbols/index.js';
+
+        const app = document.getElementById('app');
+        const order = [];
+        const byCategory = new Map();
+
+        for (const icon of icons) {
+            if (!byCategory.has(icon.category)) {
+                byCategory.set(icon.category, []);
+                order.push(icon.category);
+            }
+            byCategory.get(icon.category).push(icon);
+        }
+
+        for (const category of order) {
+            const heading = document.createElement('h2');
+            heading.textContent = category;
+            app.appendChild(heading);
+
+            const grid = document.createElement('div');
+            grid.className = 'grid';
+            for (const icon of byCategory.get(category)) {
+                const card = document.createElement('div');
+                card.className = 'icon-card';
+                card.innerHTML = icon.svg + icon.name;
+                grid.appendChild(card);
+            }
+            app.appendChild(grid);
+        }
+    </script>
+</body>
+</html>
