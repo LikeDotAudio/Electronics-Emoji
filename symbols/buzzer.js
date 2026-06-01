@@ -1,5 +1,5 @@
 export default {
   name: "Buzzer",
   category: "Primitive Components",
-  svg: `<svg viewBox="0 0 100 100"><line x1="25" y1="30" x2="75" y2="30" stroke="black" stroke-width="3"/><path d="M25,30 A25,25 0 0,0 75,30" fill="none" stroke="black" stroke-width="3"/><path d="M40,53 L40,72 L25,72" fill="none" stroke="black" stroke-width="3"/><path d="M60,53 L60,72 L75,72" fill="none" stroke="black" stroke-width="3"/></svg>`
+  svg: `<svg viewBox="0 0 100 100"><line x1="20" y1="4" x2="80" y2="4" stroke="black" stroke-width="3"/><path d="M20,4 A30,30 0 0,0 80,4" fill="none" stroke="black" stroke-width="3"/><path d="M38,32 L38,50 L0,50" fill="none" stroke="black" stroke-width="3"/><path d="M62,32 L62,50 L100,50" fill="none" stroke="black" stroke-width="3"/></svg>`
 };

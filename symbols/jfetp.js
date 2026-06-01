@@ -1,0 +1,5 @@
+export default {
+  name: "JFETP",
+  category: "Primitive Components",
+  svg: `<svg viewBox="0 0 100 100"><circle cx="50" cy="50" r="40" fill="none" stroke="black" stroke-width="3"/><line x1="0" y1="50" x2="56" y2="50" stroke="black" stroke-width="3"/><polygon points="28,50 48,40 48,60" fill="black"/><line x1="56" y1="16" x2="56" y2="60" stroke="black" stroke-width="4"/><line x1="56" y1="18" x2="72" y2="18" stroke="black" stroke-width="3"/><line x1="72" y1="18" x2="72" y2="4" stroke="black" stroke-width="3"/><line x1="56" y1="58" x2="72" y2="58" stroke="black" stroke-width="3"/><line x1="72" y1="58" x2="72" y2="94" stroke="black" stroke-width="3"/></svg>`
+};

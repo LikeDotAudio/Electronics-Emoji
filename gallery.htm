@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Complete Electronics Symbols</title>
+    <style>
+        body { font-family: sans-serif; background-color: #000; color: #eee; padding: 20px; }
+        h1 { margin-bottom: 0; }
+        .batch-title { font-size: 1.5em; font-weight: bold; border-bottom: 3px solid #888; margin-top: 45px; padding-bottom: 4px; }
+        h2 { border-bottom: 2px solid #555; margin-top: 20px; font-size: 1.1em; }
+        .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(140px, 1fr)); gap: 15px; }
+        .icon-card { background: #222; border: 1px solid #555; padding: 10px; text-align: center; border-radius: 8px; color: #ddd; }
+        /* Each emoji's window: white background + invert => black tile with a white symbol.
+           invert() also correctly flips fills (arrowhead, meter letters) and leaves fill="none" transparent. */
+        svg { display: block; margin: 0 auto 5px; background: #fff; filter: invert(1); }
+
+        /* Batch-specific icon sizes */
+        .b60 svg { width: 60px; height: 60px; }
+        .b18 svg { width: 18px; height: 18px; }
+        .b72 svg { width: 72px; height: 72px; }
+
+        /* Tighter layout for the small emoji batch */
+        .b18 .grid { grid-template-columns: repeat(auto-fill, minmax(72px, 1fr)); gap: 8px; }
+        .b18 .icon-card { padding: 6px; font-size: 10px; }
+        .b72 .grid { grid-template-columns: repeat(auto-fill, minmax(120px, 1fr)); }
+    </style>
+</head>
+<body>
+    <h1>Comprehensive Electronics Schematic Symbols</h1>
+    <div id="app"></div>
+
+    <script type="module">
+        import icons from './symbols/index.js';
+
+        // Each batch renders the full icon set at a different display size.
+        const batches = [
+            { title: 'Default — 60 × 60', cls: 'b60' },
+            { title: 'Emoji — 18 × 18', cls: 'b18' },
+            { title: 'Emoji — 72 × 72', cls: 'b72' }
+        ];
+
+        const app = document.getElementById('app');
+
+        // Group icons by category once, preserving first-seen order.
+        const order = [];
+        const byCategory = new Map();
+        for (const icon of icons) {
+            if (!byCategory.has(icon.category)) {
+                byCategory.set(icon.category, []);
+                order.push(icon.category);
+            }
+            byCategory.get(icon.category).push(icon);
+        }
+
+        for (const batch of batches) {
+            const section = document.createElement('section');
+            section.className = 'batch ' + batch.cls;
+
+            const title = document.createElement('div');
+            title.className = 'batch-title';
+            title.textContent = batch.title;
+            section.appendChild(title);
+
+            for (const category of order) {
+                const heading = document.createElement('h2');
+                heading.textContent = category;
+                section.appendChild(heading);
+
+                const grid = document.createElement('div');
+                grid.className = 'grid';
+                for (const icon of byCategory.get(category)) {
+                    const card = document.createElement('div');
+                    card.className = 'icon-card';
+                    card.innerHTML = icon.svg + icon.name;
+                    grid.appendChild(card);
+                }
+                section.appendChild(grid);
+            }
+
+            app.appendChild(section);
+        }
+    </script>
+</body>
+</html>

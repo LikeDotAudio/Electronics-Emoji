@@ -1,5 +1,5 @@
 export default {
-  name: "Variable Resistor",
+  name: "Rheostat",
   category: "Primitive Components",
-  svg: `<svg viewBox="0 0 100 100"><line x1="0" y1="50" x2="20" y2="50" stroke="black" stroke-width="3"/><line x1="80" y1="50" x2="100" y2="50" stroke="black" stroke-width="3"/><rect x="20" y="35" width="60" height="30" fill="none" stroke="black" stroke-width="3"/><line x1="15" y1="65" x2="85" y2="35" stroke="black" stroke-width="3"/></svg>`
+  svg: `<svg viewBox="0 0 100 100"><line x1="0" y1="50" x2="20" y2="50" stroke="black" stroke-width="3"/><line x1="80" y1="50" x2="100" y2="50" stroke="black" stroke-width="3"/><rect x="20" y="32" width="60" height="36" fill="none" stroke="black" stroke-width="3"/><line x1="14" y1="86" x2="80" y2="20" stroke="black" stroke-width="3"/><polygon points="90,10 84,24 76,16" fill="black"/></svg>`
 };

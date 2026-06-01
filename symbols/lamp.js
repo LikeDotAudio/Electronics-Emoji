@@ -1,5 +1,5 @@
 export default {
   name: "Lamp",
   category: "Primitive Components",
-  svg: `<svg viewBox="0 0 100 100"><line x1="0" y1="50" x2="20" y2="50" stroke="black" stroke-width="3"/><line x1="80" y1="50" x2="100" y2="50" stroke="black" stroke-width="3"/><circle cx="50" cy="50" r="30" fill="none" stroke="black" stroke-width="3"/><line x1="29" y1="29" x2="71" y2="71" stroke="black" stroke-width="3"/><line x1="29" y1="71" x2="71" y2="29" stroke="black" stroke-width="3"/></svg>`
+  svg: `<svg viewBox="0 0 100 100"><line x1="0" y1="50" x2="10" y2="50" stroke="black" stroke-width="3"/><line x1="90" y1="50" x2="100" y2="50" stroke="black" stroke-width="3"/><circle cx="50" cy="50" r="40" fill="none" stroke="black" stroke-width="3"/><line x1="22" y1="22" x2="78" y2="78" stroke="black" stroke-width="3"/><line x1="22" y1="78" x2="78" y2="22" stroke="black" stroke-width="3"/></svg>`
 };
