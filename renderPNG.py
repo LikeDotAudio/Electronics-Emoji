@@ -13,7 +13,7 @@ size-named subfolders of symbols/:
     symbols/72X72/<slug>.png    (72 x 72 px)
 
 The output filename is a SLUG derived from the symbol's name + category, NOT
-the source module's filename, so index.htm can compute the same path purely
+the source module's filename, so index.html can compute the same path purely
 from the icon object it imports:
 
     slug = name.lowercased, non-alphanumerics -> '-', trimmed
@@ -25,7 +25,7 @@ from the icon object it imports:
     "Ammeter"         / Colour Variants        -> ammeter-color
     "AND"             / Logic Gates (Colour)   -> and-color
 
-Keep this slug rule in sync with the `slug()` function in index.htm.
+Keep this slug rule in sync with the `slug()` function in index.html.
 
 Dependency: cairosvg  (pip install cairosvg)
 Run:        python3 renderPNG.py
@@ -67,7 +67,7 @@ CAT_RE  = re.compile(r'category:\s*"([^"]*)"')
 
 
 def slug(name: str, category: str) -> str:
-    """Stable filename slug from name + colour category. Mirrors index.htm."""
+    """Stable filename slug from name + colour category. Mirrors index.html."""
     s = re.sub(r"[^a-z0-9]+", "-", name.lower()).strip("-")
     if "colour" in category.lower() or "color" in category.lower():
         s += "-color"
