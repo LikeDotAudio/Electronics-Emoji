@@ -1,5 +1,5 @@
 export default {
   name: "AND",
   category: "Logic Gates",
-  svg: `<svg viewBox="0 0 100 100"><line x1="0" y1="25" x2="22" y2="25" stroke="black" stroke-width="3"/><line x1="0" y1="75" x2="22" y2="75" stroke="black" stroke-width="3"/><line x1="78" y1="50" x2="100" y2="50" stroke="black" stroke-width="3"/><g transform="translate(50 50) scale(0.7 0.95) translate(-50 -50)"><path d="M10,10 L50,10 A40,40 0 0,1 50,90 L10,90 Z" fill="none" stroke="black" stroke-width="5"/></g></svg>`
+  svg: `<svg viewBox="0 0 100 100"><line x1="0" y1="25" x2="22" y2="25" stroke="black" stroke-width="5"/><line x1="0" y1="75" x2="22" y2="75" stroke="black" stroke-width="5"/><line x1="78" y1="50" x2="100" y2="50" stroke="black" stroke-width="5"/><g transform="translate(50 50) scale(0.7 0.95) translate(-50 -50)"><path d="M10,10 L50,10 A40,40 0 0,1 50,90 L10,90 Z" fill="white" stroke="black" stroke-width="5"/></g></svg>`
 };

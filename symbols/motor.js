@@ -1,5 +1,5 @@
 export default {
   name: "Motor",
   category: "Primitive Components",
-  svg: `<svg viewBox="0 0 100 100"><line x1="0" y1="50" x2="10" y2="50" stroke="black" stroke-width="3"/><line x1="90" y1="50" x2="100" y2="50" stroke="black" stroke-width="3"/><circle cx="50" cy="50" r="40" fill="none" stroke="black" stroke-width="3"/><text x="50" y="68" font-size="52" text-anchor="middle" font-family="Arial">M</text></svg>`
+  svg: `<svg viewBox="0 0 100 100"><line x1="0" y1="50" x2="26" y2="50" stroke="black" stroke-width="5"/><line x1="74" y1="50" x2="100" y2="50" stroke="black" stroke-width="5"/><rect x="9" y="38" width="11" height="24" fill="white" stroke="black" stroke-width="3"/><rect x="80" y="38" width="11" height="24" fill="white" stroke="black" stroke-width="3"/><circle cx="50" cy="50" r="26" fill="white" stroke="black" stroke-width="3"/><text x="50" y="63" font-size="36" text-anchor="middle" font-family="Arial">M</text></svg>`
 };

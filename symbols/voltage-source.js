@@ -1,5 +1,5 @@
 export default {
   name: "Voltage",
   category: "Primitive Components",
-  svg: `<svg viewBox="0 0 100 100"><line x1="0" y1="50" x2="10" y2="50" stroke="black" stroke-width="3"/><line x1="90" y1="50" x2="100" y2="50" stroke="black" stroke-width="3"/><circle cx="50" cy="50" r="40" fill="none" stroke="black" stroke-width="3"/><line x1="38" y1="43" x2="38" y2="57" stroke="black" stroke-width="3"/><line x1="31" y1="50" x2="45" y2="50" stroke="black" stroke-width="3"/><line x1="56" y1="50" x2="70" y2="50" stroke="black" stroke-width="3"/></svg>`
+  svg: `<svg viewBox="0 0 100 100"><line x1="0" y1="50" x2="10" y2="50" stroke="black" stroke-width="5"/><line x1="90" y1="50" x2="100" y2="50" stroke="black" stroke-width="5"/><circle cx="50" cy="50" r="40" fill="white" stroke="black" stroke-width="3"/><line x1="34" y1="35" x2="34" y2="65" stroke="black" stroke-width="4"/><line x1="19" y1="50" x2="49" y2="50" stroke="black" stroke-width="4"/><line x1="59" y1="50" x2="81" y2="50" stroke="black" stroke-width="4"/></svg>`
 };

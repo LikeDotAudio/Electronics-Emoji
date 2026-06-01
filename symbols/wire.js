@@ -1,5 +1,5 @@
 export default {
   name: "Wire",
   category: "Primitive Components",
-  svg: `<svg viewBox="0 0 100 100"><line x1="0" y1="50" x2="100" y2="50" stroke="black" stroke-width="3"/></svg>`
+  svg: `<svg viewBox="0 0 100 100"><line x1="0" y1="50" x2="100" y2="50" stroke="black" stroke-width="5"/></svg>`
 };

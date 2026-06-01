@@ -21,6 +21,7 @@ import potentiometer from './potentiometer.js';
 import thermistor from './thermistor.js';
 import ammeter from './ammeter.js';
 import voltmeter from './voltmeter.js';
+import scopemeter from './scopemeter.js';
 import wattmeter from './wattmeter.js';
 import motor from './motor.js';
 import diode from './diode.js';
@@ -52,6 +53,7 @@ import xnor from './xnor.js';
 import acC from './ac-color.js';
 import ammeterC from './ammeter-color.js';
 import voltmeterC from './voltmeter-color.js';
+import scopemeterC from './scopemeter-color.js';
 import motorC from './motor-color.js';
 import wattmeterC from './wattmeter-color.js';
 import antennaC from './antenna-color.js';
@@ -85,12 +87,12 @@ import xnorC from './xnor-color.js';
 
 export default [
   switchClosed, switchOpen, selector, selected, cell, battery, acSource, voltageSource, currentSource, resistor, capacitor, inductor, wire,
-  fuse, breaker, variableResistor, potentiometer, thermistor, ammeter, voltmeter, wattmeter, motor, diode, led, zener, ldr,
+  fuse, breaker, variableResistor, potentiometer, thermistor, ammeter, voltmeter, scopemeter, wattmeter, motor, diode, led, zener, ldr,
   ground, buzzer, loudspeaker, lamp, transistor, transistorP, fet, fetP, jfetN, jfetP, opamp, antenna, transformer,
   and, or, not, nand, nor, xor, xnor,
   // ---- Colour variants ----
   acC, voltageC, currentC, cellC, cellsC, switchClosedC, selectorC, selectedC,
-  rheostatC, potentiometerC, thermistorC, ammeterC, voltmeterC, wattmeterC, motorC,
+  rheostatC, potentiometerC, thermistorC, ammeterC, voltmeterC, scopemeterC, wattmeterC, motorC,
   ledC, groundC, buzzerC, lampC, transistorNC, transistorPC, jfetNC, jfetPC,
   opampC, antennaC, transformerC,
   andC, orC, notC, nandC, norC, xorC, xnorC

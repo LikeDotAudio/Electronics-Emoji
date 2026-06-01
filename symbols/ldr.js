@@ -1,5 +1,5 @@
 export default {
   name: "LDR",
   category: "Primitive Components",
-  svg: `<svg viewBox="0 0 100 100"><line x1="0" y1="50" x2="10" y2="50" stroke="black" stroke-width="3"/><line x1="90" y1="50" x2="100" y2="50" stroke="black" stroke-width="3"/><circle cx="50" cy="50" r="40" fill="none" stroke="black" stroke-width="3"/><rect x="30" y="36" width="40" height="28" fill="none" stroke="black" stroke-width="2"/><line x1="12" y1="18" x2="32" y2="38" stroke="black" stroke-width="2"/><polygon points="32,38 25,36 30,31" fill="black"/><line x1="22" y1="12" x2="42" y2="32" stroke="black" stroke-width="2"/><polygon points="42,32 35,30 39,25" fill="black"/></svg>`
+  svg: `<svg viewBox="0 0 100 100"><line x1="0" y1="50" x2="25" y2="50" stroke="black" stroke-width="5"/><line x1="75" y1="50" x2="100" y2="50" stroke="black" stroke-width="5"/><rect x="25" y="38" width="50" height="24" fill="white" stroke="black" stroke-width="3"/><line x1="3" y1="8" x2="34" y2="37" stroke="black" stroke-width="3"/><polygon points="34,37 19,33 29,22" fill="black"/><line x1="20" y1="8" x2="51" y2="37" stroke="black" stroke-width="3"/><polygon points="51,37 36,33 46,22" fill="black"/></svg>`
 };
